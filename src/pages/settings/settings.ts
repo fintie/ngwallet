@@ -116,7 +116,7 @@ export class SettingsPage {
   ) {
     this.appName = this.app.info.nameCase;
     this.isCordova = this.platformProvider.isCordova;
-    this.isCopay = this.app.info.name === 'copay';
+    this.isCopay = this.app.info.name === 'ngwallet';
     this.user$ = this.iabCardProvider.user$;
 
     this.events.subscribe('updateCards', cards => {
@@ -227,7 +227,7 @@ export class SettingsPage {
           {
             message: 'pairingOnly'
           },
-          () => {}
+          () => { }
         );
       }, 100);
     }
@@ -312,7 +312,7 @@ export class SettingsPage {
         {
           message
         },
-        () => {}
+        () => { }
       );
     });
   }
@@ -324,9 +324,9 @@ export class SettingsPage {
   public openHelpExternalLink(): void {
     this.analyticsProvider.logEvent('help', {});
     const url =
-      this.appName == 'Copay'
-        ? 'https://github.com/bitpay/copay/issues'
-        : 'https://help.bitpay.com/bitpay-app';
+      this.appName == 'NG Wallet'
+        ? 'https://github.com/fintie/ngwallet/issues'
+        : 'http://nextgenius.com.au';
     const optIn = true;
     const title = null;
     const message = this.translate.instant(
@@ -421,7 +421,7 @@ export class SettingsPage {
   }
 
   public openPrivacyPolicy() {
-    const url = 'https://bitpay.com/about/privacy';
+    const url = 'http://nextgenius.com.au';
     const optIn = true;
     const title = null;
     const message = this.translate.instant('View Privacy Policy');
@@ -438,7 +438,7 @@ export class SettingsPage {
   }
 
   public openTermsOfUse() {
-    const url = 'https://bitpay.com/legal/terms-of-use';
+    const url = 'http://nextgenius.com.au';
     const optIn = true;
     const title = null;
     const message = this.translate.instant('View Wallet Terms of Use');
