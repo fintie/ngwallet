@@ -151,19 +151,14 @@
       <preference name="android-manifest/application/@android:allowBackup" value="false" />
 
       <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-          <application android:icon="@mipmap/ic_launcher" android:resource="@drawable/fcm_push_icon" android:roundIcon="@mipmap/ic_launcher_round" />
+          <application android:icon="@mipmap/ic_launcher" android:resource="@drawable/fcm_push_icon"  />
       </edit-config>
       <resource-file src="resources/*PACKAGENAME*/android/icon/values/ic_launcher_background.xml" target="app/src/main/res/values/ic_launcher_background.xml" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-hdpi/ic_launcher.png" target="app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-hdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-mdpi/ic_launcher.png" target="app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-mdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-      <resource-file src="resources/*PACKAGENAME*/android/icon/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
 
       <resource-file src="resources/*PACKAGENAME*/android/icon/drawable-hdpi/fcm_push_icon.png" target="app/src/main/res/drawable-hdpi/fcm_push_icon.png" />
       <resource-file src="resources/*PACKAGENAME*/android/icon/drawable-mdpi/fcm_push_icon.png" target="app/src/main/res/drawable-mdpi/fcm_push_icon.png" />
