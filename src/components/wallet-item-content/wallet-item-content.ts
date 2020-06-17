@@ -16,6 +16,11 @@ export class WalletItemContent {
         wallet.cachedStatus.availableBalanceStr &&
         wallet.cachedStatus.availableBalanceStr.replace(` ${currency}`, '');
       return availableBalanceStr || lastKnownBalance;
+    } else if (currency === 'LOV' || currency === 'NGC') {
+      const totalBalanceStr =
+        wallet.cachedStatus &&
+        wallet.cachedStatus.availableBalanceSat / wallet.cachedStatus.unitToSatoshi;
+      return totalBalanceStr || lastKnownBalance;
     } else {
       const totalBalanceStr =
         wallet.cachedStatus &&

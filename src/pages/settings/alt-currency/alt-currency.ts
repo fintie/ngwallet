@@ -67,6 +67,12 @@ export class AltCurrencyPage {
       },
       {
         isoCode: 'BUSD'
+      },
+      {
+        isoCode: 'LOV'
+      },
+      {
+        isoCode: 'NGC'
       }
     ];
   }
@@ -159,7 +165,7 @@ export class AltCurrencyPage {
     this.lastUsedAltCurrencyList = this.lastUsedAltCurrencyList.slice(0, 3);
     this.persistenceProvider
       .setLastCurrencyUsed(JSON.stringify(this.lastUsedAltCurrencyList))
-      .then(() => {});
+      .then(() => { });
   }
 
   public findCurrency(): void {

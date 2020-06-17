@@ -46,6 +46,9 @@ describe('RateProvider', () => {
   const busdResponse = [
     { code: 'BUSD', name: 'Binance USD Coin', rate: 9371.93 }
   ];
+  const lovResponse = [
+    { code: 'LOV', name: 'The LoveChain Coin', rate: 9371.93 }
+  ];
   const fiatResponse = {
     ts: 1559315523000,
     rate: 8427.66,
@@ -59,6 +62,8 @@ describe('RateProvider', () => {
   let usdcUrl: string = 'https://bitpay.com/api/rates/usdc';
   let gusdUrl: string = 'https://bitpay.com/api/rates/gusd';
   let busdUrl: string = 'https://bitpay.com/api/rates/busd';
+  let lovUrl: string = 'https://bitpay.com/api/rates/busd';
+  let ngcUrl: string = 'https://bitpay.com/api/rates/busd';
 
   let fiatRateUrl: string =
     'https://bws.bitpay.com/bws/api/v1/fiatrates/USD?coin=btc&ts=1559315523000';
@@ -123,6 +128,8 @@ describe('RateProvider', () => {
     httpMock.match(usdcUrl)[0].flush(usdcResponse);
     httpMock.match(gusdUrl)[0].flush(gusdResponse);
     httpMock.match(busdUrl)[0].flush(busdResponse);
+    httpMock.match(lovUrl)[0].flush(lovResponse);
+    httpMock.match(ngcUrl)[0].flush(lovResponse);
     httpMock.verify();
   });
 
@@ -144,6 +151,8 @@ describe('RateProvider', () => {
     httpMock.match(usdcUrl)[0].flush(usdcResponse);
     httpMock.match(gusdUrl)[0].flush(gusdResponse);
     httpMock.match(busdUrl)[0].flush(busdResponse);
+    httpMock.match(lovUrl)[0].flush(lovResponse);
+    httpMock.match(ngcUrl)[0].flush(lovResponse);
     httpMock.verify();
   });
 
@@ -352,6 +361,8 @@ describe('RateProvider', () => {
     httpMock.match(usdcUrl)[0].flush(usdcResponse);
     httpMock.match(gusdUrl)[0].flush(gusdResponse);
     httpMock.match(busdUrl)[0].flush(busdResponse);
+    httpMock.match(lovUrl)[0].flush(lovResponse);
+    httpMock.match(ngcUrl)[0].flush(lovResponse);
     httpMock.verify();
   });
 
@@ -441,6 +452,8 @@ describe('RateProvider', () => {
     httpMock.match(usdcUrl)[0].flush(usdcResponse);
     httpMock.match(gusdUrl)[0].flush(gusdResponse);
     httpMock.match(busdUrl)[0].flush(busdResponse);
+    httpMock.match(lovUrl)[0].flush(lovResponse);
+    httpMock.match(ngcUrl)[0].flush(lovResponse);
     httpMock.verify();
   });
 

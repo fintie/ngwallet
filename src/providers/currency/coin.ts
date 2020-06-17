@@ -217,6 +217,76 @@ export const availableCoins: CoinsMap<CoinOpts> = {
       gradientBackgroundColor: 'rgba(30,144,255, 0.2)'
     }
   },
+  lov: {
+    name: 'LoveChain Coin',
+    chain: 'ETH',
+    coin: 'lov',
+    unitInfo: {
+      unitName: 'LOV',
+      unitToSatoshi: 1e8,
+      unitDecimals: 8,
+      unitCode: 'lov'
+    },
+    properties: {
+      hasMultiSig: false,
+      hasMultiSend: false,
+      isUtxo: false,
+      isERCToken: true,
+      isStableCoin: true,
+      singleAddress: true
+    },
+    paymentInfo: {
+      paymentCode: 'EIP681b',
+      protocolPrefix: { livenet: 'ethereum', testnet: 'ethereum' },
+      ratesApi: 'https://bitpay.com/api/rates/busd',
+      blockExplorerUrls: 'bitpay.com/insight/#/ETH/'
+    },
+    feeInfo: {
+      feeUnit: 'Gwei',
+      feeUnitAmount: 1e9,
+      blockTime: 0.2,
+      maxMerchantFee: 'urgent'
+    },
+    theme: {
+      backgroundColor: 'rgba(135,206,250,1)',
+      gradientBackgroundColor: 'rgba(30,144,255, 0.2)'
+    }
+  },
+  ngc: {
+    name: 'NextGenius Coin',
+    chain: 'ETH',
+    coin: 'ngc',
+    unitInfo: {
+      unitName: 'NGC',
+      unitToSatoshi: 1e8,
+      unitDecimals: 8,
+      unitCode: 'ngc'
+    },
+    properties: {
+      hasMultiSig: false,
+      hasMultiSend: false,
+      isUtxo: false,
+      isERCToken: true,
+      isStableCoin: true,
+      singleAddress: true
+    },
+    paymentInfo: {
+      paymentCode: 'EIP681b',
+      protocolPrefix: { livenet: 'ethereum', testnet: 'ethereum' },
+      ratesApi: 'https://bitpay.com/api/rates/busd',
+      blockExplorerUrls: 'bitpay.com/insight/#/ETH/'
+    },
+    feeInfo: {
+      feeUnit: 'Gwei',
+      feeUnitAmount: 1e9,
+      blockTime: 0.2,
+      maxMerchantFee: 'urgent'
+    },
+    theme: {
+      backgroundColor: 'rgba(135,206,250,1)',
+      gradientBackgroundColor: 'rgba(30,144,255, 0.2)'
+    }
+  },
   pax: {
     name: 'Paxos Standard',
     chain: 'ETH',

@@ -11,7 +11,9 @@ export enum Coin {
   USDC = 'usdc',
   GUSD = 'gusd',
   PAX = 'pax',
-  BUSD = 'busd'
+  BUSD = 'busd',
+  LOV = 'lov',
+  NGC = 'ngc'
 }
 
 export type CoinsMap<T> = { [key in Coin]: T };

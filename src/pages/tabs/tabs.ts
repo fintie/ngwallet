@@ -238,6 +238,8 @@ export class TabsPage {
               : wallet.cachedStatus.totalBalanceStr;
 
           this.persistenceProvider.setLastKnownBalance(wallet.id, balance);
+          console.log("PERSISTENCE PROVIDER!!!!!!!!!!");
+          console.log(this.persistenceProvider);
 
           this.events.publish('Local/WalletUpdate', {
             walletId: wallet.id,

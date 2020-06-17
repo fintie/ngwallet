@@ -433,9 +433,9 @@ export class WalletsPage {
 
     this.logger.debug(
       'fetching status for: ' +
-        opts.walletId +
-        ' alsohistory:' +
-        opts.alsoUpdateHistory
+      opts.walletId +
+      ' alsohistory:' +
+      opts.alsoUpdateHistory
     );
     const wallet = this.profileProvider.getWallet(opts.walletId);
     if (!wallet) return;
@@ -451,6 +451,8 @@ export class WalletsPage {
             ? wallet.cachedStatus.availableBalanceStr
             : wallet.cachedStatus.totalBalanceStr;
 
+        console.log("WALLET DETAILS!!!!!!!!!:");
+        console.log(wallet);
         this.persistenceProvider.setLastKnownBalance(wallet.id, balance);
 
         // Update txps
@@ -609,8 +611,8 @@ export class WalletsPage {
         data.keyId
           ? this.addWallet(data.keyId)
           : this.navCtrl.push(AddPage, {
-              isZeroState: true
-            });
+            isZeroState: true
+          });
     });
   }
 

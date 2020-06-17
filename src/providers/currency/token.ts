@@ -29,5 +29,17 @@ export const TokenOpts = {
     symbol: 'BUSD',
     decimal: 18,
     address: '0x4fabb145d64652a948d72533023f6e7a623c7c53'
+  },
+  '0xe3c864307b5592404431649de541c259497e2bd1': {
+    name: 'LoveChain Coin',
+    symbol: 'LOV',
+    decimal: 8,
+    address: '0xe3c864307b5592404431649de541c259497e2bd1'
+  },
+  '0x97e0d16620a781b5fbd51054c67e955ab5d51a34': {
+    name: 'NextGenius Coin',
+    symbol: 'NGC',
+    decimal: 8,
+    address: '0x97e0d16620a781b5fbd51054c67e955ab5d51a34'
   }
 };

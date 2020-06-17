@@ -94,8 +94,8 @@ export class SimplexBuyPage {
       this.currency && this.isSupportedFiat(this.currency)
         ? this.currency
         : this.isSupportedFiat(isoCode)
-        ? isoCode
-        : 'USD';
+          ? isoCode
+          : 'USD';
 
     this.quoteForm = this.fb.group({
       amount: [
@@ -115,7 +115,7 @@ export class SimplexBuyPage {
     this.wallets = this.profileProvider.getWallets({
       network: 'livenet',
       onlyComplete: true,
-      coin: this.coin || ['btc', 'bch', 'eth', 'xrp', 'pax', 'busd'],
+      coin: this.coin || ['btc', 'bch', 'eth', 'xrp', 'pax', 'busd', 'lov', 'ngc'],
       backedUp: true
     });
     this.altCurrenciesToShow = ['USD', 'EUR'];

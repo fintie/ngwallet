@@ -29,7 +29,7 @@ describe('Provider: Incoming Data Provider', () => {
   }
 
   class PopupProviderMock {
-    constructor() {}
+    constructor() { }
     ionicConfirm() {
       return Promise.resolve(true);
     }
@@ -39,7 +39,7 @@ describe('Provider: Incoming Data Provider', () => {
   }
 
   class ProfileProviderMock {
-    constructor() {}
+    constructor() { }
     public getWallets() {
       return [
         {
@@ -72,8 +72,8 @@ describe('Provider: Incoming Data Provider', () => {
       testBed.get(ActionSheetProvider),
       'createIncomingDataMenu'
     ).and.returnValue({
-      present() {},
-      onDidDismiss() {}
+      present() { },
+      onDidDismiss() { }
     });
   });
 
@@ -341,6 +341,16 @@ describe('Provider: Incoming Data Provider', () => {
               currency: 'USDC',
               decimals: 6,
               estimatedAmount: 1000000,
+              minerFee: 0,
+              network: 'testnet',
+              requiredFeeRate: 4000000000,
+              selected: false
+            },
+            {
+              chain: 'ETH',
+              currency: 'LOV',
+              decimals: 8,
+              estimatedAmount: 535000000,
               minerFee: 0,
               network: 'testnet',
               requiredFeeRate: 4000000000,
