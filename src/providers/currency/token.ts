@@ -39,7 +39,7 @@ export const TokenOpts = {
   '0x97e0d16620a781b5fbd51054c67e955ab5d51a34': {
     name: 'NextGenius Coin',
     symbol: 'NGC',
-    decimal: 8,
+    decimal: 0,
     address: '0x97e0d16620a781b5fbd51054c67e955ab5d51a34'
   }
 };
