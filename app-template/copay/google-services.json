@@ -10,13 +10,12 @@
       "client_info": {
         "mobilesdk_app_id": "1:149194066736:android:6de8942b48fea047",
         "android_client_info": {
-          "package_name": "com.bitpay.copay"
+          "package_name": "com.nextgenius.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id":
-            "149194066736-1gf0d9nk288dke5jdiuj8unkplhl8nco.apps.googleusercontent.com",
+          "client_id": "149194066736-1gf0d9nk288dke5jdiuj8unkplhl8nco.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
